@@ -170,7 +170,7 @@ if(msg){
       const members = await room.memberAll() // memtion all members in this room
       const someMembers = members.slice(0, 3);
       await room.say('又有新同学加入啦！欢迎欢迎！😄', ...someMembers)
-    //}
+    //}  
     }
   
    //功能一：发送消息ding返回消息dong（text）（发两遍啊）
