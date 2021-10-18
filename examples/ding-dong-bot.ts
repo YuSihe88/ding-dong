@@ -166,9 +166,7 @@ if(msg){
     if (await msg.mentionSelf()) {
 
       await room.say('您好！欢迎使用实习生入职向导\n机器人笛笛为您服务～\n请问有什么可以帮到您吗？\n1，若想看我回个“dong!“，请回复“ding”\n2，若想了解我们的企业福利，请回复“2”\n3，若想了解我们的公司业务，请回复：“3”\n4，若想了解我们的企业文化，请回复：“4”\n5，若想询问其他事项请联系我们的人力小哥，请回复：“5”\n')
-      // 功能六： 将文本发入群中并@所有人（每边都发）
-      //if (msg.text() === '嗯') {
-      //console.info('嗯') 
+      // 功能六： 将文本发入群中并@所有人（每边都发） 
       const members = await room.memberAll() // memtion all members in this room
       const someMembers = members.slice(0, 3);
       await room.say('又有新同学加入啦！欢迎欢迎！😄', ...someMembers)
