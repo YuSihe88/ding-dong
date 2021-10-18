@@ -87,24 +87,12 @@ You can use `export` to set environment variables in Linux, and use `set` in Win
 ##### Linux
 
 ```shell
-export WECHATY_LOG=verbose
-export WECHATY_PUPPET=wechaty-puppet-wechat
+
 npm start
-# the above is equals to the below command:
-# npx ts-node examples/ding-dong-bot.ts
+
 ```
 
-##### Windows
 
-```shell
-set WECHATY_LOG=verbose
-set WECHATY_PUPPET=wechaty-puppet-wechat
-npm start
-# the above is equals to the below command:
-# npx ts-node examples/ding-dong-bot.ts
-```
-
-You are all set!
 
 #### Step 4: Troubleshooting
 
